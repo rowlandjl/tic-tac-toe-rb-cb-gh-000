@@ -58,6 +58,9 @@ end
 def turn_count
 end 
 
+def current_player
+end 
+
 def won?(board)
   WIN_COMBINATIONS.each_with_index do |element, index|
     if position_taken?(board, element[0]) == true
