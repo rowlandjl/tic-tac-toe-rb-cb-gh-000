@@ -104,7 +104,6 @@ def winner(board)
     board.each do |index|
       index
     end
-    win
   else
     nil
   end
