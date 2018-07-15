@@ -34,10 +34,10 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if board[index] != nil || position_taken?(board, index) == false 
-    true 
-  else 
-    false 
+  if board[index] != nil || position_taken?(board, index) == false
+    true
+  else
+    false
   end 
 
 end
