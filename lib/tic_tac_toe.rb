@@ -35,10 +35,10 @@ end
 
 def valid_move?(board, index)
   if board[index] != nil && position_taken?(board, index)
-    false 
+    false
   else
     true 
-  end 
+  end
 end
 
 def turn(board)
