@@ -38,7 +38,7 @@ def valid_move?(board, index)
     false
   else
     true
-  end 
+  end
 end
 
 def turn(board)
@@ -57,11 +57,11 @@ end
 
 def turn_count(board)
   count = 0
-  board.each do |turn| 
+  board.each do |turn|
     if turn == "X" || turn == "O"
-      counter += 1
-    end 
-  end 
+      count += 1
+    end
+  end
   count
 end
 
