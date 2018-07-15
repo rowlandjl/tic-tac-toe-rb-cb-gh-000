@@ -101,7 +101,7 @@ def winner(board)
     board.each do |index|
       win = board[index]
     end
-    win.to_s
+    win
   else
     nil
   end
