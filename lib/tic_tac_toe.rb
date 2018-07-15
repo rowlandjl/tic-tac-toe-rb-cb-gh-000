@@ -102,7 +102,7 @@ end
 def winner(board)
   if won?(board) != false
     board.each do |index|
-      win = board[index]
+      win = index
     end
     win
   else
