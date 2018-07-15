@@ -51,7 +51,13 @@ def turn(board)
   end
 end
 
-def turn_count
+def turn_count(board)
+  count = 0
+  board.select |c|
+    if c != " "
+      count += 1
+    end 
+  end 
 end
 
 def current_player
