@@ -33,7 +33,7 @@ def position_taken?(board, index)
   end
 end
 
-def valid_move?(board, index)
+def valid_move?(board, position)
   !position_taken?(board, index.to_i - 1) && (1..9).include?(index.to_i)
 end
 
