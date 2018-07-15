@@ -34,7 +34,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, position)
-  !position_taken?(board, index.to_i - 1) && (1..9).include?(index.to_i)
+  !position_taken?(board, position.to_i - 1) && (1..9).include?(index.to_i)
 end
 
 def turn(board)
