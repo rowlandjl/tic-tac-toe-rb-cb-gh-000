@@ -107,7 +107,7 @@ end
 def play(board)
   until over?(board) do
     turn(board)
-  end 
+  end
 
   if won?(board)
     "Congratulations, you won!"
