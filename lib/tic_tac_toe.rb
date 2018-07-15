@@ -33,8 +33,7 @@ def position_taken?(board, index)
   end
 end
 
-def valid_move?(board, position)
-  !position_taken?(board, position.to_i - 1) && (1..9).include?(position.to_i)
+def valid_move?(board, index)
 end
 
 def turn(board)
@@ -102,5 +101,5 @@ end
 def winner(board)
   if winning_combo = won?(board)
     board[winning_combo.first]
-  end 
+  end
 end
