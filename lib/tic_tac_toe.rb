@@ -100,11 +100,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) != false
-    board.each do |index|
-      board[index.first]
-    end
-  else
-    nil
-  end
+  if winning_combo = won?(board)
+    board[winning_combo.first]
+  end 
 end
