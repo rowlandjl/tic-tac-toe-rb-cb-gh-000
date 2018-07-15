@@ -56,10 +56,10 @@ def turn(board)
 end
 
 def turn_count
-end 
+end
 
 def current_player
-end 
+end
 
 def won?(board)
   WIN_COMBINATIONS.each_with_index do |element, index|
@@ -98,7 +98,7 @@ end
 
 def winner(board)
   if won?(board) != false
-    win.each do |index|
+    board.each do |index|
       win = board[index]
     end
     win
