@@ -34,7 +34,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if position_taken?(board, index) || board[index] == nil
+  if position_taken?(board, index) || board[index] == " "
     false
   else
     true
@@ -70,7 +70,7 @@ def current_player(board)
     "X"
   else
     "O"
-  end 
+  end
 end
 
 def won?(board)
