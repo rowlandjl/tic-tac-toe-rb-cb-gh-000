@@ -57,11 +57,11 @@ end
 
 def turn_count(board)
   count = 0
-  board.select do |c|
-    if c != " "
-      count += 1
-    end
-  end
+  board.each do |turn| 
+    if turn == "X" || turn == "O"
+      counter += 1
+    end 
+  end 
   count
 end
 
