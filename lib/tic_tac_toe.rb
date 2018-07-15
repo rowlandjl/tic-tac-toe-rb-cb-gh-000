@@ -56,7 +56,7 @@ def turn_count(board)
   board.select |c|
     if c != " "
       count += 1
-    end 
+    end
   end 
 end
 
