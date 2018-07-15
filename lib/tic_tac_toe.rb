@@ -34,11 +34,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if position_taken?(board, index - 1) || board[index] == nil
-    false
-  else
-    true
-  end
+  !position_taken?(board, index.to_i - 1) && (1..9).include?(index.to_i)
 end
 
 def turn(board)
